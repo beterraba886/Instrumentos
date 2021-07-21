@@ -34,18 +34,24 @@ app.get('/instrumentos/:classificacao', async function (req, res){
     res.render('instrumentos');
 });
 
-
 app.get('/instrumentos/:classificacao/:tipo', async function (req, res){
     let t = req.params.tipo;
     let data = await Instrumento.find({ tipo: t});
     console.log(data);
-    res.render('instrumentos');
+    res.render('instrumentos', {instruments : data});
+});
+
+app.get('/instrumentos/:classificacao/:tipo/:id', async function (req, res){
+    let id = req.params.id;
+    let data = await Instrumento.findById(id);
+    console.log(data);
+    res.render('produto', {p : data});
 });
 
 app.get('/teste', function(req, res){
-    const r = Math.floor(Math.random()*10 +1)
     res.render('teste', { rand: r, teste: "alo"});
 });
+
 app.get('/*', function(req,res){
     res.send('alo');
 })

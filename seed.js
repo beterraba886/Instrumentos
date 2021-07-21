@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Instrumento = require('./app/models/instrumento');
+const Instrumento = require('./app/models/instrumento.js');
 mongoose.connect('mongodb://localhost:27017/instrumentos', {useNewUrlParser: true, useUnifiedTopology: true})
 .then(()=>{
     console.log("CONNECTION OPEN!!!");
