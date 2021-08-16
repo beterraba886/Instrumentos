@@ -26,6 +26,18 @@ const instrumentoSchema = new Schema({
     marca: {
         type: String,
         //required: true,
+    },
+    descricao: {
+        type: String,
+        required: true
+    },
+    itens:{
+        type: [String],
+        min: 1
+    },
+    especificacao: {
+       type: [String],
+       min: 4
     }
 });
 

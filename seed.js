@@ -16,6 +16,20 @@ const seedInstrumentos = [
         url: 'https://alojadepianos.com.br/wp-content/uploads/2018/06/P-45-01-basic.jpg',
         preco: 2510.10,
         marca: 'Yamaha',
+        descricao: 'Desfrute da sensação de um verdadeiro piano em qualquer lugar. Além de portátil e muito fácil de usar, o piano digital P45 é compacto e muito elegante.',
+        itens: [
+            'Instrumento simulador de piano de cauda com 88 teclas e 3 níveis de sensibilidade (teclado GHS)',
+            '12W de potência total',
+            '64 notas de Polifonia',
+            '10 Vozes no total',
+            'Saída MONO compartilhada com FONE DE OUVIDO.',
+            'Som AMW Stereo Sampling',
+            'Fonte Original PA150 BiVolt',
+            'Pedal Sustain FC5 + Porta partituras',
+            'Peso de 11,5kg'
+        ],
+        especificacao: ['largura: 1326mm'].
+        
     },
     {
         nome: 'CDP-S100',

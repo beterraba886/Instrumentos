@@ -3,14 +3,33 @@
     <div class="ui container">
         <div class="ui column grid">
             <div class="row">
-                <div class="ui eight wide column "><img class="ui image"src="<%=p.url%>"></div>
-                <div class="ui eight wide column ">aaaAAAAAAAAAAAAAA</div>
-            </div>
-            <div class="row">
-                teste
+                
+                <div class="eight wide column">
+                    <h3 class="ui header"><%=p.marca + '  ' + p.nome%></h3>
+                    <p>R$ <%=p.preco%></p>
+                    <button class="ui green button">Comprar</button>
+                </div>
+                <div class="six wide right floated column">
+                    <img src="<%=p.url%>" class="ui large bordered rounded image">
+                  </div>
+        
             </div>
         </div>
+        <br>
+        <div class="ui equal width stackable internally celled grid">
+            <div class="center aligned row">
+              <div class="column">
+                <h3>Descricao</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, rerum.</p>
+              </div>
+              <div class="column">
+                <h3>Especificacao</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, rerum.</p>
+              </div>
+            </div>
+          </div>
+        
+    
     </div>    
     
-
 <%- include('partials/footer')%>
